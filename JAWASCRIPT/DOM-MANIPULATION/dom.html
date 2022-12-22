@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+        <!--html tag is an root element(root node/element node) and all tags inside html are called element node and every thing that we write indide html tags is called an node and all nodes in html are descended nodes-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+<body id="body">
+      <ul id="global" data="valid">    <!--data is valid -->
+          <li class="item-1">First element</li>
+          <li class="item-1">Second element</li>
+          <li class="item-1">Third Element</li>
+  
+      </ul>
+      <div class="allDivs" id="firstDiv" >First Div</div>
+      <script>
+   //const allDivs  = document.querySelectorAll(".allDivs")
+   //console.log(allDivs)
+      </script>
+      <div class="allDivs">Second  Div</div>
+
+      <table>
+        <tr>
+          <td>One</td>
+          <td>Two</td>
+
+        </tr>
+        <tr>
+          <td>Three</td>
+          <td>Four</td>
+
+
+        </tr>
+      </table>
+      <script>
+          // Root node--------------------------------------------
+          //console.log(document.documentElement)
+          //console.log(document.body)
+          //console.log(document.head)
+
+
+          //childern nodes-------------------------------------
+          //console.log(document.body.childNodes)
+          //console.log(document.body.children)
+
+
+          //console.log(document.body.firstElementChild)
+
+          //console.log(document.body.firstChild)
+          //console.log(document.body.lastChild)
+          //console.log(document.body.lastElementChild)\
+
+
+          //for (node of document.body.children){
+            //console.log(document.body.children)
+          //}
+//  if we want to convert it into array-----------------
+  //const childernOfBody  = Array.from(document.body.children)
+  //console.log(childernOfBody)
+
+
+
+
+
+// how we see siblings-------------
+          //const ulTag  = document.body.children[0]
+          //const  firstLi = ulTag.children[0]
+          //const  secondLi = ulTag.children[1]
+
+          //console.log(secondLi.previousElementSibling.textContent)
+
+
+
+
+
+//    how dom works in table----------
+//const tableTag = document.body.children[1]
+//console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue")          
+// if we just want to watch rows in table tag---
+//console.log(tableTag.rows)
+
+
+
+// ---------now we discuss dom methods------------
+ 
+
+//  ---  1  ---  ID Method------
+
+//global.style.background  =  "red"
+
+// ----2---  Get element by Id----
+//const ulTag  = document.getElementById("global")
+//ulTag.style.backgroundColor  = "blue"
+
+//----3--- By Class Method--------
+//const  listItem  = document.getElementsByClassName("item-1")
+
+//console.log(document.getElementsByTagName("table"))
+
+//  ---4---  Query selector--------
+//const  listItems = document.querySelectorAll("ul > li:nth-child(b2)")
+//console.log(listItems[0].textContent)
+
+//console.log(allDivs)
+
+//  ---Attributes------------------------------------------------
+
+
+//console.log(global.getAttribute("data"))   // method to get user defined attribute
+
+//console.log(global.setAttribute("order-placed","pending"))   // method to set user defined attribute
+//console.log(global.getAttribute("order-placed"))
+//console.log(global.hasAttribute("order-placed"))   //yes or no
+//console.log(global.removeAttribute("order-placed"))
+//console.log(global.hasAttribute("order-placed"))
+//console.log(global.attributes)
+
+
+//  ----- Creating and Removing the Node elements-----------------
+//  cteate element--
+//const newDiv  = document.createElement("div")
+//const newText  = document.createTextNode("Hello World")
+//---------we can also add text as
+//newDiv.textContent  = " hello mian g"
+//body.append(newDiv)
+//newDiv.appendChild(newText)
+//--------------for add in complete HTML tag---------------
+//newDiv.innerHTML  = `<ul id="global" data="valid">    <!--data is valid -->
+  //        <li class="item-1">First element</li>
+    //      <li class="item-1">Second element</li>
+      //    <li class="item-1">Third Element</li>
+  //</ul>`
+  //body.append(newDiv)
+
+//body.append(newDiv)    // append means add at last
+//body.prepend(newDiv)    // prepend means add at first
+//body.before(newDiv)    // same as
+//body.after(newDiv)
+
+ // firstDiv.replaceWith(newDiv)
+
+ // remove div----------------
+ firstDiv.remove()
+
+
+
+      </script>
+    
+</body>
+</html>

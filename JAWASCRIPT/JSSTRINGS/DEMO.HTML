@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <h1>Demo JS</h1>
+<button>Roll No. 1: Shari Ali</button>
+<script src="script.js"></script>
+</body>
+</html>
+/*console code of js strings */
+DEMO.HTML:1          GET http://127.0.0.1:5500/DEMO.HTML 404 (Not Found)
+let hello = "hello!1 ";
+undefined
+let welcome = "\"welcome to apna school\"";
+undefined
+hello+welcome
+'hello!1 "welcome to apna school"'
+let outputMsg= hello+welcome
+undefined
+outputMsg
+'hello!1 "welcome to apna school"'
+let outputMsg= hello+welcome+hello+welcome
+undefined
+outputMsg
+'hello!1 "welcome to apna school"hello!1 "welcome to apna school"'
+let outputMsg= hello+welcome+ "    space     "hello+welcome
+VM604:1 Uncaught SyntaxError: Unexpected identifier
+let outputMsg= hello+welcome+ "    space     " +hello+welcome
+undefined
+outputMsg
+'hello!1 "welcome to apna school"    space     hello!1 "welcome to apna school"'
+"string"+100
+'string100'
+'19'+'76'
+'1976'
+19+09
+28
+let numberString="123"
+undefined
+Number(numberString)
+123
+numberString=Number(numberString);
+123
+numberString
+123
+numberString.toString
+ƒ toString() { [native code] }
+numberString.toString()
+'123'
+let outputMsg= hello+welcome+"your score is"+numberString
+undefined
+outputMsg
+'hello!1 "welcome to apna school"your score is123'
+`${hello+welcome} your score is ${numberString}`
+'hello!1 "welcome to apna school" your score is 123'

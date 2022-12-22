@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch condition</title>
+</head>
+<body>
+    <h1> How to Check Switch Condition</h1>
+</body>
+<script>
+    var fruittype = prompt("Which fruit you need?");
+    switch (fruittype) {
+        case 'Apple':
+            console.log('Apple Rs100 per kg.');
+            break;
+            case 'Mango':
+            console.log('Mango Rs120 per kg.');
+            break;
+            case 'Guava':
+            console.log('Guava Rs80 per kg.');
+            break;
+            case 'Orange':
+            console.log('Orange Rs90 per Dozen.');
+            break;
+            case 'Banana':
+            console.log('Banana Rs110 per kg.');
+            break;
+            case 'Gtrapes':
+            console.log('Grapes Rs160 per kg.');
+            break;
+            default:
+                console.log(`${fruittype} Today fruits is finished , will be available Tomarrow`);
+    }
+    console.log("Anything more?");
+</script>
+</html>

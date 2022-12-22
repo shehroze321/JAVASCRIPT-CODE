@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<body>
+    <button id="clickBtn">Click Me</button>
+    <script>
+        // Events
+        function calMe(event){
+            console.log(event.type)
+            console.log(event.currentTarget)
+            console.log(event.clientY)
+            console.log(event.clientX)
+
+
+            alert("Thanks for Clicking")
+        }
+        //clickBtn.onclick = calMe
+        clickBtn.addEventListener("click",calMe)
+        //clickBtn.addEventListener("click",function(){  // to add multiple listener
+            //alert("Thanks Pa G")
+        //})
+        // Remove Listener---------------
+        //clickBtn.removeEventListener("click",calMe)
+
+
+         //here we define our function which is declare after clicking
+        // add event listener-------
+        //function calMe (){
+           // alert("Thanks for Clicking")
+            
+       // }
+       // clickBtn.onclick = calMe() // here we call our function which is declare before clicking
+    </script>
+</body>
+</html>
